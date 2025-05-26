@@ -4,7 +4,7 @@ from databricks.connect import DatabricksSession
 spark = DatabricksSession.builder.profile("isp_new_env_demo").getOrCreate()
 
 df = spark.read.table("samples.nyctaxi.trips")
-df.show(5)
+df.show(500000)
 
 # COMMAND ----------
 
